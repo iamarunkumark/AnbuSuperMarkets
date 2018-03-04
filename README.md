@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Welcome to Anbu Super Markets
 
-You can use the [editor on GitHub](https://github.com/iamarunkumark/asm.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Anbu Super Markets is a pioneer in the field of discount super markets in ponnamaravathy, Pudukkottai district, Tamilnadu, India.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### About:
 ```markdown
-Syntax highlighted code block
+Anbu super Markets is a one stop solution for all your home needs. We sell high quality good.
+We offer product in following categories,
 
-# Header 1
-## Header 2
-### Header 3
+- Groceries & Oil
+- Daily needs
+- Fancy
+- Stationary
+- Icecreams
 
-- Bulleted
-- List
+We deliver at your door step for monthly and party orders.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Contact:
 
-### Jekyll Themes
+```markdown
+# Anbu Super Markets,
+# Anna Salai,
+# Ponnamaravathy,
+# Pudukottai District,
+# Tamilnadu.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iamarunkumark/asm.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```
