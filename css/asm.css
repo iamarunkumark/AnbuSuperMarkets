@@ -16,7 +16,7 @@
    border-bottom: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  margin: 50px auto 10px;
+  margin: 80px auto 10px;
   padding: 5px;
   text-align: center;s
   -webkit-animation: spin 2s linear infinite; /* Safari */
@@ -93,6 +93,10 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.social-icons > li {
+    display: inline-block;
+    margin: 0 20px 0 0;
 }
 .footer-widgets {
     padding: 90px 0 30px;
