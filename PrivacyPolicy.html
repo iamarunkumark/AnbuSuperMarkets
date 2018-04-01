@@ -15,17 +15,17 @@
     <script>
     function init() {
       $("#loading").hide();
+      $("#outer").show();
     }
     </script>
     </head>
   <body onload="init()" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div id="outer"> 
+    <div id="outer" style="display:none;"> 
     <div class="loader" id="loading"></div>
   <header class="header">
     <div class="fluid">
 <nav class="navbar navbar-expand-sm bg-white fixed-top"> <!-- navbar-dark -->
   <a class="navbar-brand col-md-3 col-sm-8" href="http://www.anbusupermarkets.com">அன்பு</a>
-  <div class="col-md-5">
   <ul class="navbar-nav justify-content-center">
     <li class="nav-item active">
       <a class="nav-link" href="http://www.anbusupermarkets.com">HOME </a>
@@ -40,11 +40,9 @@
       <a class="nav-link" href="http://www.anbusupermarkets.com">ACTIVITIES</a>
     </li>
   </ul>
-</div>
-<div class="col-md-4 col-sm-4">
-  <!--icons here-->
-  </div>
+  <!--icons here-->  
 </nav>
+</div>
 </header>
 
   <div class="container" >
@@ -110,6 +108,7 @@
                     </div>
                 </div>
             </footer>
+</div>
 </div>
   </body>
 </html>
