@@ -48,7 +48,7 @@
          color: #007bff;
 }
   
-  .navbar-brand  {
+  .navbar-brand , .navbar-brand:hover {
     color: #DC143C;
     font-size: 24px;  
   }
@@ -79,7 +79,7 @@ text-align: center;
     margin-bottom: 60px;
     font-size: .8125rem;
 }
-.widget .widget-title {
+/*.widget*/ .widget-title {
     margin-bottom: 24px;
 }
 p {
@@ -104,7 +104,7 @@ p {
 .footer {
     background: #222;
 }
-.widget .widget-title > h6 {
+/*.widget*/ .widget-title > h6 {
     text-transform: uppercase;
     letter-spacing: 2.6px;
     font-weight: 700;
