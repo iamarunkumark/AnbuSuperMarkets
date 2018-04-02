@@ -42,6 +42,10 @@
 	background: linear-gradient(to left, #00dbde, #505cfd);
 	height: 500px;
 }
+.policy-bg-gradient {
+  background: linear-gradient(to left, #00dbde, #505cfd);
+  height: 65px;
+}
 .header {
     /*border-bottom: 1px solid rgb(49, 141, 241);*/
     height: 60px;
@@ -180,4 +184,5 @@ body {
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     background: #e5e5e5;
     text-align: center;
+    margin-top: 25px;
 }

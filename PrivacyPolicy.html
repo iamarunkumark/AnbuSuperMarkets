@@ -12,45 +12,61 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="scripts/Home.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <script>
+        <script>
     function init() {
       $("#loading").hide();
       $("#outer").show();
+      $(".nav-link").css('color', '#ffffff');      
+          $(".navbar-brand").css('color', '#ffffff'); 
     }
+  $(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-default").css('background-color', '#ffffff');
+          $(".nav-link").css('color', '#007bff');          
+          $(".navbar-brand").css('color', '#007bff');          
+       } else {
+          $('.navbar-default').css('background-color', '');
+          $(".nav-link").css('color', '#ffffff');      
+          $(".navbar-brand").css('color', '#ffffff'); 
+       }
+   });
+    }
+});
     </script>
     </head>
   <body onload="init()" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div id="outer" style="display:none;"> 
     <div class="loader" id="loading"></div>
-  <header class="header">
-    <div class="fluid">
-<nav class="navbar navbar-expand-lg bg-white fixed-top"> <!-- navbar-dark -->
-  <a class="navbar-brand" href="http://www.anbusupermarkets.com">அன்பு</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav mr-auto justify-content-center">
-    <li class="nav-item active">
-      <a class="nav-link" href="http://www.anbusupermarkets.com">HOME </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://www.anbusupermarkets.com">ABOUT</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://www.anbusupermarkets.com">DELIVERY</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://www.anbusupermarkets.com">ACTIVITIES</a>
-    </li>
-  </ul>
-</div>
-  <!--icons here-->  
+    <div id="outer" style="display:none;"> 
+      <div class="policy-bg-gradient">
+      <nav id="navbar-full" class="navbar navbar-expand-md navbar-default fixed-top">        
+    <button class="navbar-toggler mr-2" type="button"  data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+    </button>    
+    <a href="#outer" class="navbar-brand d-flex flex-fill">அன்பு</a>
+    <div class="navbar-collapse collapse" id="navbar">
+<ul id="navbar-list" class="navbar-nav justify-content-center d-flex flex-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="http://anbusupermarkets.com">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://anbusupermarkets.com#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://anbusupermarkets.com#about">DELIVERY</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-fill"><!--spacer--> </div>
 </nav>
 </div>
-</header>
-
-  <div class="container" >
+  <div class="container" id="startchange" >
     <div class="row">
 <div class="col-12" style="margin-top: 20px;">
     <div class="header_name">
