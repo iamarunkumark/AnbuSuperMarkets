@@ -38,6 +38,24 @@
    });
     }
 });
+
+    $(function() {
+    // navbar background color
+  $( "#nav-toggler-btn" ).click(function() {
+  var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+      scroll_start = $(this).scrollTop();
+      if(scroll_start <= offset.top) {
+        $(".navbar-default").css('background-color', '#ffffff');
+      $(".nav-link").css('color', '#007bff');          
+      $(".navbar-brand").css('color', '#007bff');          
+      }
+  }  
+});
+});
+
    $(function(){ 
      var navMain = $(".navbar-collapse"); // avoid dependency on #id
      // "a:not([data-toggle])" - to avoid issues caused
@@ -53,7 +71,7 @@
     <div id="outer" style="display:none;"> 
       <div class="policy-bg-gradient">
       <nav id="navbar-full" class="navbar navbar-expand-md navbar-default fixed-top">        
-    <button class="navbar-toggler mr-2" type="button"  data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+    <button id="nav-toggler-btn" class="navbar-toggler mr-2" type="button"  data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
     aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
     </button>    
